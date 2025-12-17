@@ -1,0 +1,166 @@
+:root {
+  --main-color: hsl(231, 69%, 60%);
+  --secondary-color: hsl(0, 94%, 66%);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* start nav */
+.navbar a:hover {
+  color: var(--secondary-color);
+}
+
+.navbar button {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+}
+.navbar .navbar-toggler {
+  background-color: white;
+}
+
+.navbar .btn:hover {
+  border: 1px solid var(--secondary-color);
+  background-color: white;
+  color: var(--secondary-color);
+}
+/* end nav */
+/* start landing */
+.landing {
+  position: relative;
+}
+.landing::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  bottom: 0;
+  right: 0;
+  background-color: var(--main-color);
+  z-index: -1;
+  border-radius: 0 0 0 70px;
+}
+.landing .chrome {
+  border: none;
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.landing .chrome:hover,
+.landing .firefox:hover {
+  border: 1px solid var(--main-color);
+  background-color: white;
+  color: var(--main-color);
+}
+.landing .firefox {
+  border: none;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+/* end landing */
+/* start features */
+.features p {
+  max-width: 500px;
+  margin: auto;
+}
+.features button {
+  background-color: white;
+  color: black;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+.features button:hover {
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  background: none;
+}
+
+/* end features */
+/* start feature-2 */
+.feature-2 .images {
+  position: relative;
+}
+.feature-2 .images::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  bottom: -50px;
+  left: 0;
+  background-color: var(--main-color);
+  z-index: -1;
+  border-radius: 0 0 70px 0;
+}
+/* end feature-2 */
+
+/* start download */
+.download p {
+  max-width: 500px;
+  margin: auto;
+}
+
+.download a:hover {
+  border: 1px solid var(--main-color);
+  background-color: white;
+  color: var(--main-color);
+}
+
+.download .card {
+  transition: 0.3s;
+}
+
+.download .card:hover {
+  transform: translateY(-10px);
+}
+/* end download */
+
+/* start questions */
+.questions p {
+  max-width: 500px;
+  margin: auto;
+}
+.questions .accordion {
+  max-width: 700px;
+  margin: auto;
+}
+
+/* end questions */
+
+/* start contact */
+.contact {
+  background-color: var(--main-color);
+}
+.contact input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.contact input:focus {
+  outline: none;
+}
+
+.contact button:hover {
+  color: var(--secondary-color);
+  background-color: white;
+}
+/* end contact */
+footer {
+  background-color: hsl(229, 31%, 21%);
+  padding: 20px;
+}
+
+footer ul li a:hover {
+  color: var(--secondary-color) !important;
+}
+.social-icon {
+  transition: 0.3s;
+}
+
+footer .social-icon:hover {
+  filter: brightness(0) invert(45%) sepia(88%) saturate(500%) hue-rotate(325deg);
+}
